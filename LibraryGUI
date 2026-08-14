@@ -11,7 +11,7 @@
 ]]
 
 if debugX then
-	warn('Initialising Rayfield')
+	warn('Initialising JinHub')
 end
 
 
@@ -284,7 +284,7 @@ if not requestsDisabled and not useStudio then
 				reporter = Analytics.new({
 					url          = "https://rayfield-collect.sirius-software-ltd.workers.dev",
 					token        = ANALYTICS_TOKEN,
-					product_name = "Rayfield",
+					product_name = "JinHub",
 					category     = "UILibrary",
 				})
 			end)
@@ -750,7 +750,7 @@ end
 
 if gethui then
 	for _, Interface in ipairs(gethui():GetChildren()) do
-		if Interface.Name == Rayfield.Name and Interface ~= JinHub then
+		if Interface.Name == Rayfield.Name and Interface ~= Rayfield then
 			Interface.Enabled = false
 			Interface.Name = "Rayfield-Old"
 		end
